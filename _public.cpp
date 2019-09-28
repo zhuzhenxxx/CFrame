@@ -1190,6 +1190,10 @@ bool CheckFileEnd(const char *strFileName,const char *strEnd)
 
 // 从文件文件中读取一行
 // strEndStr是一行数据的结束标志，如果为空，则以换行符"\n"为结束标志。
+// 参数strBuffer是一个字符串 用来保存从文件中读取的数据 
+// 参数size是读取内容长度
+// fp是待读取文件的文件指针
+
 bool FGETS(const FILE *fp,char *strBuffer,const int ReadSize,const char *strEndStr)
 {
   char strLine[ReadSize+1];
@@ -1965,6 +1969,7 @@ bool CFile::OpenForRead(const char *filename,const char *openmode)
 
 // 读取文件的每行，并把每一行的回车换行符去掉，还可以判断每行的内容是否以strEndStr结束，
 // 是否在每行的最后补充strPadStr字符
+
 bool CFile::FFGETS(char *strBuffer,const int ReadSize,const char *strEndStr)
 {
   if ( m_filetype != 1 ) return false;
@@ -2245,4 +2250,17 @@ char *STRNCAT(char* dest,size_t destlen,const char *src,size_t n)
     strncpy(dest+strlen(dest),src,n);
 
   return dest;
+}
+
+
+int SNPRINTF(char *str,size_t size,const char *fmt,...)
+{ 
+  memset(str,0,size+1);
+  
+  va_list arg;
+  va_start(arg,fmt);
+
+  vsnprintf(str,size,fmt,arg);
+  va_end(arg);
+
 }
