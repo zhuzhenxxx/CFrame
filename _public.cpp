@@ -24,6 +24,9 @@
 
       部分函数重载了库函数
  */
+
+
+
 // 操作XMLBuffer的函数
 // in_XMLBuffer，XML格式的字符串
 // in_FieldName，字段的标签名
@@ -610,8 +613,21 @@ bool CLogFile::BackupLogFile()
 
   if (m_tracefp == 0) return true;
 
+/*
+int fseek(FILE *stream, long int offset, int whence)
+参数
+stream -- 这是指向 FILE 对象的指针，该 FILE 对象标识了流。
+offset -- 这是相对 whence 的偏移量，以字节为单位。
+whence -- 这是表示开始添加偏移 offset 的位置。它一般指定为下列常量之一：
+ */
   fseek(m_tracefp,0L,2); 
-
+/*
+long int ftell(FILE *stream)
+参数
+stream -- 这是指向 FILE 对象的指针，该 FILE 对象标识了流。
+返回值
+该函数返回位置标识符的当前值。如果发生错误，则返回 -1L，全局变量 errno 被设置为一个正值。
+ */
   if (ftell(m_tracefp) > 100*1024*1024) 
   {
     fclose(m_tracefp); m_tracefp=0;
