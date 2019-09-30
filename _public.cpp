@@ -1317,6 +1317,9 @@ void PickNumber(const char *strSrc,char *strDst,const bool bWithSign,const BOOL 
 
 
 // 获取文件的大小，返回字节数
+//    int stat(const char *path, struct stat *buf);
+//   stat函数获取path指定文件或目录的信息，并将信息保存到结构体buf中，执行成功返回0，失败返回-1。
+// 
 int FileSize(const char *in_FullFileName)
 {
   struct stat st_filestat;
@@ -2140,6 +2143,43 @@ FILE *FOPEN(const char *filename,const char *mode)
 }
 
 // 用某文件或目录的全路径中的目录创建目录，以级该目录下的各级子目录
+// 用mkdir创建目录的时候，如mkdir("/tmp/aaa/bbb/ccc",00755);，
+// 如果上级目录不存在（/tmp/aaa或/tmp/aaa/bbb不存在），是无法创建/tmp/aaa/bbb/ccc目录的，
+// 这不是我们想要的，我们要再写一个函数，如果上级目录不存在，就创建上级目录，一级一级的创建，
+//
+//
+// access函数用于判断当前操作系统用户对文件或目录的存取权限。
+// 函数声明：
+
+//        int access(const char *pathname, int mode);
+
+//        参数说明：
+
+//        pathname文件名或目录名，可以是当前目录的文件或目录，也可以列出全路径。
+
+//        mode 需要判断的存取权限。在头文件unistd.h中的预定义如下：
+
+//        #define R_OK 4     // R_OK 只判断是否有读权限
+
+//        #define W_OK 2    // W_OK 只判断是否有写权限
+
+//        #define X_OK 1     // X_OK 判断是否有执行权限
+
+//        #define F_OK 0     // F_OK 只判断是否存在
+
+//        返回值：
+
+//        当pathname满足mode的条件时候返回0，不满足返回-1。
+
+//        在实际开发中，access函数主要用于判断文件或目录是否是存在。
+//返回值：
+
+       // 当pathname满足mode的条件时候返回0，不满足返回-1。
+
+       // 在实际开发中，access函数主要用于判断文件或目录是否是存在。
+
+
+
 bool MKDIR(const char *filename,BOOL bisfilename)
 {
   // 检查目录是否存在，如果不存在，逐级创建子目录
@@ -2169,6 +2209,8 @@ bool MKDIR(const char *filename,BOOL bisfilename)
 }
 
 // 更改文件的修改时间属性
+// utime函数的第二个参数是一个结构体utimbuf，不方便使用，在实际开发中，我们更希望是一个字符串格式的时间，
+// 如："2019-02-08 12:05:02"，重写一个utime函数，功能与utime相同，但是把第二个参数改为字符串格式的时间，函数如下
 int UTime(const char *filename,const char *mtime)
 {
   struct utimbuf stutimbuf;
