@@ -34,7 +34,7 @@ int main(int argc,char *argv[])
   iminid=1;
   imaxid=5;
   memset(strbtime,0,sizeof(strbtime));
-  strcpy(strbtime,"2017-12-20 09:45:30");
+  strcpy(strbtime,"2019-08-10 09:45:30");
 
   // 执行SQL语句，一定要判断返回值，0-成功，其它-失败。
   if (stmt.execute() != 0)

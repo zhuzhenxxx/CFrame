@@ -48,7 +48,7 @@ int main(int argc,char *argv[])
     stgoods.id=ii;
     sprintf(stgoods.name,"商品名称%02d",ii);
     stgoods.sal=ii*2.11;
-    strcpy(stgoods.btime,"2018-03-01 12:25:31");
+    strcpy(stgoods.btime,"2019-08-01 12:25:31");
 
     // 每次指定变量的值后，执行SQL语句，一定要判断返回值，0-成功，其它-失败。
     if (stmt.execute() != 0)

@@ -32,7 +32,7 @@ int main(int argc,char *argv[])
     BEGIN\
       delete from goods;\
       insert into goods(id,name,sal,btime)\
-                 values(100,'过程商品',55.65,to_date('2018-01-02 13:00:55','yyyy-mm-dd hh24:mi:ss'));\
+                 values(100,'过程商品',55.65,to_date('2019-08-02 13:00:55','yyyy-mm-dd hh24:mi:ss'));\
     END;");
   // 注意，PL/SQL中的每条SQL需要用分号结束，END之后还有一个分号。
 
