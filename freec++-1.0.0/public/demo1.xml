@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='gbk'?>
+
+<!--该参数文件存放了短信平台全部后台程序的运行参数-->
+
+<hssms>
+    <!--短信平台连接数据库的参数-->
+    <connstr>hssms/smspwd@hssmszx</connstr>
+
+    <!--日志文件存放的目录-->
+    <logpath>/log/hssms</logpath>
+
+    <!--短信文件存放的根目录-->
+    <smsdata>/smsdata</smsdata>
+
+    <!--移动号码段-->
+    <cmpphmd>134,135,136,137,138,139,147,150,151,152,157,158,159,182,183,187,188</cmpphmd>
+
+    <!--联通号码段，联通的客户经理是18676659938 林经理-->
+    <sgiphmd>130,131,132,145,155,156,185,186</sgiphmd>
+
+    <!--电信号码段-->
+    <smgphmd>133,153,180,189</smgphmd>
+</hssms>
+

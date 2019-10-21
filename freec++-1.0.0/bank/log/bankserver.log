@@ -1,0 +1,104 @@
+2018-06-24 16:59:36 接受到一个新的连接。
+2018-06-24 16:59:36 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 16:59:36 获取连接池0
+2018-06-24 16:59:36 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 16:59:36 recv ok:<msgid>5</msgid><oper_id>wucz</oper_id><userid>100000001</userid><je>500.01</je>
+2018-06-24 16:59:36 获取连接池0
+2018-06-24 16:59:36 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 16:59:36 TcpRead() failed.
+2018-06-24 17:00:25 接受到一个新的连接。
+2018-06-24 17:00:25 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:00:25 获取连接池0
+2018-06-24 17:00:25 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:00:25 recv ok:<msgid>6</msgid><oper_id>wucz</oper_id><userid>100000001</userid><je>10.01</je><userid1>100000002</userid1>
+2018-06-24 17:00:25 获取连接池0
+2018-06-24 17:00:25 send ok:<retno>-1</retno><retmesg>余额不足。</retmesg>
+2018-06-24 17:00:25 TcpRead() failed.
+2018-06-24 17:00:51 接受到一个新的连接。
+2018-06-24 17:00:51 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:00:51 获取连接池0
+2018-06-24 17:00:51 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:00:51 recv ok:<msgid>4</msgid><oper_id>wucz</oper_id><userid>100000002</userid><je>8000.02</je>
+2018-06-24 17:00:51 获取连接池0
+2018-06-24 17:00:51 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:00:51 TcpRead() failed.
+2018-06-24 17:00:54 接受到一个新的连接。
+2018-06-24 17:00:54 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:00:54 获取连接池0
+2018-06-24 17:00:54 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:00:54 recv ok:<msgid>4</msgid><oper_id>wucz</oper_id><userid>100000002</userid><je>8000.02</je>
+2018-06-24 17:00:54 获取连接池0
+2018-06-24 17:00:54 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:00:54 TcpRead() failed.
+2018-06-24 17:01:16 接受到一个新的连接。
+2018-06-24 17:01:16 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:01:16 获取连接池0
+2018-06-24 17:01:16 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:01:16 recv ok:<msgid>4</msgid><oper_id>wucz</oper_id><userid>100000001</userid><je>10000.02</je>
+2018-06-24 17:01:16 获取连接池0
+2018-06-24 17:01:16 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:01:16 TcpRead() failed.
+2018-06-24 17:02:08 接受到一个新的连接。
+2018-06-24 17:02:08 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:02:08 获取连接池0
+2018-06-24 17:02:08 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:02:08 recv ok:<msgid>6</msgid><oper_id>wucz</oper_id><userid>100000001</userid><je>10.01</je><userid1>100000003</userid1>
+2018-06-24 17:02:08 获取连接池0
+2018-06-24 17:02:08 send ok:<retno>-2</retno><retmesg>转入帐户非法。</retmesg>
+2018-06-24 17:02:08 TcpRead() failed.
+2018-06-24 17:02:26 接受到一个新的连接。
+2018-06-24 17:02:26 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 17:02:26 获取连接池0
+2018-06-24 17:02:26 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:02:26 recv ok:<msgid>6</msgid><oper_id>wucz</oper_id><userid>100000001</userid><je>10.01</je><userid1>100000002</userid1>
+2018-06-24 17:02:26 获取连接池0
+2018-06-24 17:02:26 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 17:02:26 TcpRead() failed.
+2018-06-24 19:03:03 main exit,sig=15.2018-06-24 19:03:03 关闭数据库连接池。
+2018-06-24 19:03:03 关闭监听的sock。
+2018-06-24 19:03:03 关闭客户端的sock。
+2018-06-24 19:03:03 程序退出。
+2018-06-24 19:03:33 接受到一个新的连接。
+2018-06-24 19:03:33 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 19:03:33 获取连接池0
+2018-06-24 19:03:33 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 19:03:33 recv ok:<msgid>7</msgid><userid>700000001</userid>
+2018-06-24 19:03:33 获取连接池0
+2018-06-24 19:03:33 send ok:<retno>-1</retno><retmesg>客户信息不存在。</retmesg>
+2018-06-24 19:03:33 TcpRead() failed.
+2018-06-24 19:03:44 接受到一个新的连接。
+2018-06-24 19:03:44 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 19:03:44 获取连接池0
+2018-06-24 19:03:44 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 19:03:44 recv ok:<msgid>7</msgid><userid>100000001</userid>
+2018-06-24 19:03:44 获取连接池0
+2018-06-24 19:03:44 send ok:<retno>0</retno><retmesg>ok</retmesg><ye>9990.01</ye>
+2018-06-24 19:03:44 TcpRead() failed.
+2018-06-24 19:11:00 main exit,sig=15.2018-06-24 19:11:00 关闭数据库连接池。
+2018-06-24 19:11:00 关闭监听的sock。
+2018-06-24 19:11:00 关闭客户端的sock。
+2018-06-24 19:11:00 程序退出。
+2018-06-24 19:27:03 接受到一个新的连接。
+2018-06-24 19:27:03 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 19:27:03 获取连接池0
+2018-06-24 19:27:03 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 19:27:03 recv ok:<msgid>8</msgid><userid>100000001</userid>
+2018-06-24 19:27:03 获取连接池0
+2018-06-24 19:27:03 send ok:<retno>0</retno><retmesg>ok</retmesg><totalcount>6</totalcount>
+2018-06-24 19:27:03 TcpRead() failed.
+2018-06-24 19:28:58 main exit,sig=15.2018-06-24 19:28:58 关闭数据库连接池。
+2018-06-24 19:28:58 关闭监听的sock。
+2018-06-24 19:28:58 关闭客户端的sock。
+2018-06-24 19:28:58 程序退出。
+2018-06-24 19:36:31 接受到一个新的连接。
+2018-06-24 19:36:31 recv ok:<msgid>1</msgid><oper_id>wucz</oper_id><password>wuczpwd</password>
+2018-06-24 19:36:31 获取连接池0
+2018-06-24 19:36:31 send ok:<retno>0</retno><retmesg>ok</retmesg>
+2018-06-24 19:36:31 recv ok:<msgid>8</msgid><userid>100000001</userid>
+2018-06-24 19:36:31 获取连接池0
+2018-06-24 19:36:32 send ok:<retno>0</retno><retmesg>ok</retmesg><totalcount>6</totalcount>
+2018-06-24 19:36:32 TcpRead() failed.
+2018-06-24 19:38:32 main exit,sig=15.2018-06-24 19:38:32 关闭数据库连接池。
+2018-06-24 19:38:32 关闭监听的sock。
+2018-06-24 19:38:32 关闭客户端的sock。
+2018-06-24 19:38:32 程序退出。
